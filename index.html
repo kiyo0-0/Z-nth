@@ -12,9 +12,6 @@
 <body>
     <main>
         <nav>
-            <div id="logo">
-                <img src="assets/logo01-nobg.png" alt="site-logo">
-            </div>
             <form class="search" role="search" aria-label="Site search">
                 <label class="visually-hidden" for="search-input">Search</label>
                 <i class="search-icon ri-search-line" aria-hidden="true"></i>
@@ -32,8 +29,60 @@
                 </div>
             </div>
         </nav>
-        <aside></aside>
-        <section id="hero"></section>
+        <aside>
+            <div id="logo">
+                <img src="assets/logo01-nobg.png" alt="site-logo">
+            </div>
+            <menu>
+                <a href="#" id="inbox">
+                    <img src="assets/inbox.png" alt="inbox" class="sidebar-icon" id="inbox">
+                </a>
+                <a href="#">
+                    <img src="assets/parcel.png" alt="cart" class="sidebar-icon" id="cart">
+                </a>
+                <a href="#">
+                    <img src="assets/console.png" alt="console" class="sidebar-icon" id="console">
+                </a>
+                <a href="#">
+                    <img src="assets/camera.png" alt="camera" class="sidebar-icon" id="camera">
+                </a>
+                <a href="#">
+                    <img src="assets/analytics.png" alt="stats" class="sidebar-icon" id="stats">
+                </a>
+                <a href="#" id="group">
+                    <img src="assets/group-chat.png" alt="group" class="sidebar-icon" id="group">
+                </a>
+            </menu>
+            <div id="home">
+                <a href="index.html" id="group">
+                    <img src="assets/home.png" alt="group" class="sidebar-icon">
+                </a>
+            </div>
+        </aside>
+        <section id="hero">
+            <div id="hero-slider-container">
+                <div id="hero-slider">
+                    <div class="card">
+                        <div class="model">
+                            <img src="assets/ghostrunner.png" alt="">
+                        </div>
+                        <div class="card-content"></div>
+                    </div>
+                    <div class="card">
+                        <div class="model">
+                            <img src="assets/kratos.png" alt="">
+                        </div>
+                        <div class="card-content"></div>                    
+                    </div>
+                    <div class="card">
+                        <div class="model">
+                            <img src="assets/nier.png" alt="">
+                        </div>
+                        <div class="card-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="alert"></section>
         <section id="game-slider"></section>
         <section id="friends"></section>

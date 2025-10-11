@@ -15,11 +15,13 @@ body{
 main{
     height: 100vh;
     width: 100%;
+    padding-right: 40px;
     display: grid;
-    grid-template-columns: repeat(1fr, 8);
-    grid-template-rows: 10vh 15vh 1fr 30vh 1fr;
+    grid-template-columns: 10vw 1fr 1fr 1fr 1fr 1fr 1fr 120px;
+    grid-template-rows: 10vh 10vh 160px 25vh 1fr;
+    gap: 12px;
     grid-template-areas: 
-    "nav nav nav nav nav nav nav nav"
+    "aside nav nav nav nav nav nav nav"
     "aside hero hero hero hero hero alert alert"
     "aside hero hero hero hero hero friends friends"
     "aside game-slider game-slider game-slider game-slider game-slider friends friends"
@@ -29,19 +31,10 @@ main{
 
 nav{
     height: 10vh;
-    margin: 0 2.5%;
     grid-area: nav;
     display: flex;
     justify-content:flex-start;
     align-items: center;
-}
-
-#logo{
-    height: 100%;
-}
-#logo img{
-    height: 100%;
-    object-fit: cover;
 }
 
 .search{
@@ -53,7 +46,6 @@ nav{
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 0 100px;
     padding: 8px 14px;
     border-radius: 16px; 
     background: #313139;
@@ -80,8 +72,7 @@ nav{
 }
 .search:focus-within{
     box-shadow: 0 0 0 3px rgba(255,255,255,0.03),
-                inset 0 1px 0 rgba(255,255,255,0.02),
-                inset 0 -6px 18px rgba(0,0,0,0.6);
+                 0 1px 0 rgba(255,255,255,0.02);
     border-color: rgba(255,255,255,0.12);
 }
 .visually-hidden{
@@ -123,13 +114,139 @@ nav{
 }
 
 aside{
-    background-color: chocolate;
+    background-color: #0e0e10;
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 42px;
+
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+menu{
+    height: 50vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background: #d2d2d206;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+.sidebar-icon{
+    height: 32px;
+    width: 32px;
+}
+#inbox{
+    height: 30px;
+    width: 30px;
+}
+#group{
+    height: 40px;
+    width: 40px;
 }
 #hero{
-    background-color:crimson;
     grid-area: hero;
+
+
 }
+
+#hero-slider-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+#hero-slider{
+    display: flex;
+    height: 100%;
+    width: 300%;
+    animation: slider 10s alternate infinite;
+    transition: ease all 0.3s;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(0);
+    }16.66%{
+        transform: translateX(0);
+    }
+    33.33%{
+        transform: translateX(-33.33%);
+    }50%{
+        transform: translateX(-33.33%);
+    }
+    66.66%{
+        transform: translateX(-66.66%);
+    }100%{
+        transform: translateX(-66.66%);
+    }
+    
+}
+.card{
+    position: relative;
+    flex-grow: 1;
+    height: 85%;
+    align-self: flex-end;
+    margin: 0 20px; 
+    /* animation: autorun 15s linear infinite;
+    will-change: left;
+    animation-delay: calc( (15s / var(--quantity) ) *( var(--position)-1) - 14s); */
+    border-radius: 16px;
+
+    z-index: 2; 
+
+
+}
+
+.card .model{
+    position: absolute;
+    left: 37%;
+    top:-7%;
+    overflow:visible;
+    z-index: 3;
+}
+.card:nth-child(1){
+    background: radial-gradient(circle at left, rgba(255, 70, 70, 0.25), transparent 60%),
+                linear-gradient(to right, #121212, #1a1a1a);
+    border: 1px solid #5F5151;
+
+}
+.card:nth-child(2){
+    background: radial-gradient(circle at left, rgba(197, 76, 31, 0.25), transparent 60%),
+                linear-gradient(to right, #121212, #1a1a1a);
+    border: 1px solid #5f5451;
+}
+.card:nth-child(3){
+    background: radial-gradient(circle at left, rgba(75, 185, 225, 0.25), transparent 60%),
+                linear-gradient(to right, #121212, #1a1a1a);
+    border: 1px solid #515e5f;
+}
+
+@keyframes autorun {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+
+
+
 #alert{
     background-color:cyan;
     grid-area: alert;
