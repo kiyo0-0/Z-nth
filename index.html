@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z-nth</title>
+    <link rel="shortcut icon" href="assets/logo01-nobg.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -18,15 +19,21 @@
                 <input id="search-input" class="search-input" name="q" type="search" placeholder="Search" />
             </form>
             <div class="cta-icon-container">
-                <div class="cta-icon" id="notification">
-                    <i class="ri-notification-3-line"></i>
-                </div>
-                <div class="cta-icon" id="cart">
-                    <i class="ri-shopping-bag-line"></i>
-                </div>
-                <div class="cta-icon" id="profile">
-                    <i class="ri-user-3-fill"></i>
-                </div>
+                <a href="#">
+                    <div class="cta-icon" id="profile">
+                        <i class="ri-notification-3-line"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cta-icon" id="profile">
+                        <i class="ri-shopping-bag-line"></i>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cta-icon" id="profile">
+                        <i class="ri-user-3-fill"></i>
+                    </div>
+                </a>
             </div>
         </nav>
         <aside>
@@ -63,32 +70,386 @@
             <div id="hero-slider-container">
                 <div id="hero-slider">
                     <div class="card">
+                        <div class="card-content">
+                            <div class="new" style="    background-color: #ff5151; border:1px solid salmon;">New</div>
+                            <img src="assets/ghostrunner-title.png" alt="" class="title">
+                            <span style="color: #ff5151;">$69.99</span>
+                            <div class="hero-cta">
+                                <button class="purchase" style="background-color: #ff5151;     border: 1px solid salmon;">Purchase</button>
+                                <button class="add-to-cart" style="color: #ff5151;">Add to Cart</button>
+                            </div>
+                        </div>
                         <div class="model">
                             <img src="assets/ghostrunner.png" alt="">
                         </div>
-                        <div class="card-content"></div>
                     </div>
                     <div class="card">
+                        <div class="card-content">
+                            <div class="new" style="    background-color: #5ea2a7; border:1px solid #43d7d7;">New</div>
+                            <img src="assets/kratos-title.png" alt="" class="title">
+                            <span style="color: #5ea2a7;">$69.99</span>
+                            <div class="hero-cta">
+                                <button class="purchase" style="background-color: #5ea2a7;     border: 1px solid #43d7d7;">Purchase</button>
+                                <button class="add-to-cart" style="color: #5ea2a7;">Add to Cart</button>
+                            </div> 
+                        </div>           
                         <div class="model">
                             <img src="assets/kratos.png" alt="">
                         </div>
-                        <div class="card-content"></div>                    
                     </div>
                     <div class="card">
+                        <div class="card-content">
+                            <div class="new" style="    background-color: #2c2d2d; border:1px solid #fffff050;">New</div>
+                            <img src="assets/nier-title.png" alt="" class="title">
+                            <span style="color: #fffff0;">$69.99</span>
+                            <div class="hero-cta">
+                                <button class="purchase" style="background-color: #2c2d2d;     border: 1px solid #fffff050">Purchase</button>
+                                <button class="add-to-cart" style="color: #fffff0;">Add to Cart</button>
+                            </div> 
+                        </div>  
                         <div class="model">
                             <img src="assets/nier.png" alt="">
                         </div>
-                        <div class="card-content"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="alert"></section>
-        <section id="game-slider"></section>
-        <section id="friends"></section>
-        <section id="assessories"></section>
-        <section id="favorite"></section>
-        <section id="parties"></section>
+        <section id="alert">
+            <div id="content">
+                <h1>Spider-man Marvel's update</h1>
+                <h3>10 Min. remaining</h3>
+            </div>
+            <div id="loader"><h3>47%</h3></div>
+        </section>
+        <section id="game-slider">
+            <div class="head">
+                <h1>Most Played Games</h1>
+            </div>
+            <div class="slider">
+                <div class="game">
+                    <img src="assets/cyberpunk.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Cyberpunk</h1>
+                        <h3>26hrs</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/minecraft.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>minecraft</h1>
+                        <h3>33hrs</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/dead-by-daylight.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Dead by Daylighht</h1>
+                        <h3>multiplayer</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/doom.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Doom:Eternal</h1>
+                        <h3>27hrs</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/dying-light.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Dying Light</h1>
+                        <h3>18hrs</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/nier-automata.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Nier:Automata</h1>
+                        <h3>40hrs</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/god-of-war-ragnarok.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>God of War:Ragnarok</h1>
+                        <h3>30hrs</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/valorant.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Valorant</h1>
+                        <h3>multiplatyer</h3>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/wuthering-waves.jpg" alt="game-image" class="cover">
+                    <div class="name">
+                        <h1>Wuthering Waves</h1>
+                        <h3>live</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="friends">
+            <div class="head">
+                <h1>Friends Online·4/</h1>
+                <h1>all</h1>
+            </div>
+            <ul class="friend-list">
+                <li>
+                    <div class="friend">
+                        <img src="assets/user12.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Alex Chen</h1>
+                            <h3>Apex Legends</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user11.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Jamie Rodriguez</h1>
+                            <h3>Minecraft</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user10.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Maya Singh</h1>
+                            <h3>Valorant</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user9.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Ben Carter</h1>
+                            <h3>Elden Ring</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user8.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Chloe Davies</h1>
+                            <h3>Minecraft</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user7.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Ethan Wu</h1>
+                            <h3>Valorant</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user6.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Sofia Rossi</h1>
+                            <h3>Wuthering Waves</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user5.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Noah Miller</h1>
+                            <h3>Call of Duty: Warzone</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user4.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Olivia Kim</h1>
+                            <h3>Wuthering waves</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user3.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Liam Walker</h1>
+                            <h3>Rocket League</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user2.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Ava Gupta</h1>
+                            <h3>Minecraft</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend">
+                        <img src="assets/user1.jpg" alt="user-profile">
+                        <div class="friend-details">
+                            <h1>Lucas Hayes</h1>
+                            <h3>valorant</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="accessories">
+            <a href="#" style="text-decoration: none; color: #fffff0;">
+                <div class="head">
+                    <h1>Accessories</h1>
+                    <img src="assets/arrow.png" alt="arrow">
+                </div>
+                <div id="div-model">
+                    <img src="assets/Controller.png" alt="div">
+                </div>
+            </a>
+        </section>
+        <section id="favorite">
+            <div class="head">
+                <h1>Favorite list</h1>
+                <img src="assets/arrow.png" alt="arrow">
+            </div>
+            <ul class="game-list">
+                <li>
+                    <div class="game">
+                        <img src="assets/doom.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Doom Eternal</h1>
+                            <h3>PS4 & PC</h3>
+                        </div>
+                        <div class="date">
+                            <h1 style="opacity: 40%;">20 Mar</h1>
+                            <h3>2020</h3>
+                        </div>
+                        <button class="download">Download</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="game">
+                        <img src="assets/wuthering-waves.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Wuthering Waves</h1>
+                            <h3>PS5 & PC</h3>
+                        </div>
+                        <div class="date">
+                            <h1 style="opacity: 40%;">23 May</h1>
+                            <h3>2024</h3>
+                        </div>
+                        <button>Installed</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="game">
+                        <img src="assets/valorant.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Valorant</h1>
+                            <h3>PS5 & PC</h3>
+                        </div>
+                        <div class="date">
+                            <h1 style="opacity: 40%;">11 Apr</h1>
+                            <h3>2021</h3>
+                        </div>
+                        <button>Installed</button>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+        <section id="parties">
+            <div class="head">
+                <h1>Parties</h1>
+            </div>
+            <ul class="party-list">
+                <li>
+                    <div class="party">
+                        <img src="assets/gta 5.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Grand Theft Auto V</h1>
+                            <h3>Looking for one more</h3>
+                        </div>
+                        <div class="image-group">
+                            <div class="user">
+                                <img src="assets/user1.jpg" alt="">
+                            </div>
+                            <div class="user">
+                                <img src="assets/user2.jpg" alt="">
+                            </div>
+                            <div class="user" id="more">+2</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="party">
+                        <img src="assets/fortnite.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Fortnite</h1>
+                            <h3>Matchmaking in a TDM</h3>
+                        </div>
+                        <div class="image-group">
+                            <div class="user">
+                                <img src="assets/user3.jpg" alt="">
+                            </div>
+                            <div class="user">
+                                <img src="assets/user4.jpg" alt="">
+                            </div>
+                            <div class="user" id="more">+4</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="party">
+                        <img src="assets/apex-legends.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Apex Legends</h1>
+                            <h3>In match 20:00 mins... </h3>
+                        </div>
+                        <div class="image-group">
+                            <div class="user">
+                                <img src="assets/user7.jpg" alt="">
+                            </div>
+                            <div class="user">
+                                <img src="assets/user1.jpg" alt="">
+                            </div>
+                            <div class="user">
+                                <img src="assets/user8.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="party">
+                        <img src="assets/Warzone.ico" alt="" class="cover">
+                        <div class="title">
+                            <h1>Call of Duty</h1>
+                            <h3>Matchmaking Hardpoint</h3>
+                        </div>
+                        <div class="image-group">
+                            <div class="user">
+                                <img src="assets/user5.jpg" alt="">
+                            </div>
+                            <div class="user">
+                                <img src="assets/user6.jpg" alt="">
+                            </div>
+                            <div class="user" id="more">+3</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
